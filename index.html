@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS Link-->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- BootStrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <title>Web Dev Documentation</title>
+</head>
+<body>
+    <!-- SideBar -->
+    <div class="sidebar">
+    <div class="flex-shrink-0 p-3 col-3" style="width: 280px;">
+      <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+        <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-5 fw-semibold"> SideBar </span>
+      </a>
+      <ul class="list-unstyled ps-0">
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+            Front-End Web Development
+          </button>
+          <div class="collapse" id="home-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#working-of-the-internet" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> Working of the Internet </a></li>
+              <li><a href="#working-of-websites" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Working of Websites </a>  </li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+            Introduction to HTML 
+          </button>
+          <div class="collapse" id="dashboard-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#what-is-html" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> What is HTML? </a></li>
+              <li><a href="#html-heading-elements" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> HTML Heading Elements </a></li>
+              <li><a href="#html-paragraph-element" class="link-body-emphasis d-inline-flex text-decoration-none rounded">HTML Paragraph Element</a></li>
+              <li><a href="#self-closing-tags" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Self-Closing Tags</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+            Intermediate HTML 
+          </button>
+          <div class="collapse" id="orders-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#the-list-element" class="link-body-emphasis d-inline-flex text-decoration-none rounded">The List Element</a></li>
+              <li><a href="#nesting-and-indentation" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Nesting and Indentation</a></li>
+              <li><a href="#the-anchor-element" class="link-body-emphasis d-inline-flex text-decoration-none rounded">The Anchor Element</a></li>
+              <li><a href="#image-elements" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Image Elements</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+            Multi-Page Websites
+          </button>
+          <div class="collapse" id="account-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#computer-file-paths" class="link-dark d-inline-flex text-decoration-none rounded">Computer File Paths</a></li>
+              <li><a href="#what-are-webpages" class="link-dark d-inline-flex text-decoration-none rounded">What are Webpages?</a></li>
+              <li><a href="#html-boilerplate" class="link-dark d-inline-flex text-decoration-none rounded">HTML Boilerplate</a></li>
+              <li><a href="#github-web-hosting" class="link-dark d-inline-flex text-decoration-none rounded">GitHub Web Hosting</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mb-1">
+          <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#js-collapse" aria-expanded="false">
+            JavaScript Documentation
+          </button>
+          <div class="collapse" id="js-collapse">
+            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+              <li><a href="#introduction" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> Introduction </a></li>
+              <li><a href="#javascript-and-java" class="link-body-emphasis d-inline-flex text-decoration-none rounded">JavaScript and Java</a></li>
+              <li><a href="#hello-world" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Hello World</a></li>
+              <li><a href="#variables" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> Variables </a></li>
+              <li><a href="#declaring-variables" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> Declaring Variables </a></li>
+              <li><a href="#variable-scope" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> Variable Scope </a></li>
+              <li><a href="#global-variables" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> Variables </a></li>
+              <li><a href="#constants" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> Constants </a></li>
+              <li><a href="#data-types" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> Data Types </a></li>
+              <li><a href="#if-else-statement" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> if-else Statement </a></li>
+              <li><a href="#while-statement" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> while Statement </a></li>
+              <li><a href="#function-declarations" class="link-body-emphasis d-inline-flex text-decoration-none rounded"> Function Declarations </a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div></div>
+
+    <!-- HTML Documentation -->
+    <div class="main-section">
+    <h1 class="primary-header"> Front-End Web Development </h1>
+    <h3 class="secondary-header" id="working-of-the-internet"> Working of the Internet </h3>
+    <ul class="content">
+      <li> Internet connects computers to each other to transfer data. </li>
+      <li> Servers save all data and files that are needed to access and interact with websites. </li>
+      <li> Clients: computers that request files </li>
+      <li> Client browser sends request to Internet Service Providers (ISP) which relays the message to the DNS [Domain Name Server]</li>
+      <li> The DNS looks up the needed address. </li>
+      <li> Every computer has a unique IP address. </li>
+      <li> Undersea cables connect all the continents. They use laser method that transports at a speed upto 400 GB of data per second.</li>
+    </ul>
+    <h3 class="secondary-header" id="working-of-websites"> How Do Websites Actually Work? </h3>
+    <ul class="content">
+      <li> Data recieved from the server is 3 types of files: HTML Code Files, CSS Code Files and JS Code Files. </li>
+      <li> <ul>
+        <li> HTML Code File: contains content of website </li>
+        <li> CSS Code File: deals with styling of website </li>
+        <li> JavaScript Code File: deals with website functionality </li>
+      </ul></li>
+      <li> Browser: it is a software that deals with code files. </li>
+      <li> Chrome Developer Tools can be used to change websites on the Internet temporarily. </li>
+      <li> A refresh however restores because the code files are delivered again to the browser. </li>
+      <li> Only the local browser is changed. </li>
+    </ul>
+    
+    <hr>
+
+    <h1 class="primary-header"> Introduction to HTML </h1>
+    <h3 class="secondary-header" id="what-is-html"> What is HTML? </h3>
+    <ul>
+      <li> All browsers take code files and render them into website. </li>
+      <li> HTML only was used to create the first websites. </li>
+      <li> HTML deals with the content and structure of a website. </li>
+      <li> HTML stands for HyperText Markup Language, where 
+        <ul>
+          <li> HyperText - pieces of text that can link to other parts of a website </li>
+          <li> Markup Language - does code markup </li>
+        </ul>
+      </li>
+      <li> Mark-Up is done using HTML tags. </li>
+    </ul>
+    <h3 class="secondary-header" id="html-heading-elements"> HTML Heading Elements </h3>
+    <ul>
+      <li> HTML heading elements have an opening tag of  &lth1&gt and with a closing tag of &lt/h1&gt. The content of the heading is placed between the two opening and closing tags. </li>
+      <li> Tags are always placed inside angle brackets (&lt and &gt)</li>
+      <li> An element consists of opening and closing tags along with content. </li>
+      <li> Heading elements have a hierarchy from h1 to h6, decreasing in size. </li>
+      <li> CTRL + S autosaves the code and changes indentation. </li>
+      <li> NOTE: 
+        <ul>
+          <li> Do not have more than one h1 as it is a top heading</li>
+          <li> Do not skip levels while creating heading elements. </li>
+        </ul>
+      </li>
+      <img src="./previews/html-heading-pic.png" alt="headings" class="html-doc">
+    </ul>
+    <h3 class="secondary-header" id="html-paragraph-element"> HTML Paragraph Element </h3>
+    <ul>
+      <li> &ltp&gt is the paragraph opening tag and &lt/p&gt is the closing tag, and the content is placed in between the opening and closing tags. </li>
+      <li> Placeholder text is ofter Lorem Ipsum text, which comes from Classical Latin literature, which is more than 2000 years old. It is used to simulate content in a website.</li>
+    </ul>
+    <h3 class="secondary-header" id="self-closing-tags"> Self-Closing Tags </h3>
+    <ul> 
+      <li> Non-void elements: they have content between the closing and opening tags.</li>
+      <li> Void elements: elements that have no content between the opening and closing tags. </li>
+      <li> &lthr/&gt: void element tags [this tag inserts a horizontal rule] </li>
+      <li> &ltbr/&gt: inserts a break [separates things onto separate lines] </li>
+      <li> TIP: Use different paragraph tags instead of %ltbr%gt between paragraphs. Use the break element </li>
+    </ul>
+
+    <hr>
+
+    <h1 class="primary-header"> Intermediate HTML </h1>
+    <h3 class="secondary-header" id="the-list-element"> The LIST Element </h3>
+    <ul>
+      <li> &ltul&gt and &lt/ul&gt are the opening and closing tags for unordered lists. </li>
+      <li> Unordered lists use bullets. </li>
+      <li> &ltol&gt and &lt/ol&gt are the opening and closing tags for ordered lists. Ordered lists use numbers. </li>
+      <li> &ltli&gt is the list element for both types of lists. </li>
+    </ul>
+    <h3 class="secondary-header" id="nesting-and-indentation"> Nesting and Indentation </h3>
+    <ul>
+      <li> &ltli&gt is nested under either the &ltul&gt or the &ltol&gt elements. </li>
+      <li> Lists can be nested inside lists as well. </li>
+      <li> Indentation is important when nesting is used as it offers clues on what comes under what. </li>
+      <img src="./previews/html-lists.jpg" alt="html-lists" class="html-doc"> 
+    </ul>
+    <h3 class="secondary-header" id="the-anchor-element"> The Anchor Element </h3>
+    <ul>
+      <li> &lta href="link"&gt This is the link &lt/a&gt </li>
+      <li> &lta&gt is the element while href is the attribute. </li>
+      <li> HTML attributes are present after tags. </li>
+      <li> Global attributes: every single element has access to them. </li>
+      <li> Local attributes: specific to their elements 
+        <ul>
+          <li> &ltol&gt attributes: </li>
+          <ul>
+            <li> start: charges start number </li>
+            <li> type: type of number </li>
+          </ul>
+        </ul>
+      </li>
+    </ul>
+    <h3 class="secondary-header" id="image-elements"> Image Elements </h3>
+    <ul>
+      <li> &ltimg src="url &gt where src is the source of image </li>
+      <li> Image element is a self-closing/void element. </li>
+      <li> alt is another attriute of the img tag. alt inserts alternative text if the image is not loading. </li>
+      <li> GIFs also work in the same way as .jpeg images do. </li>
+    </ul>
+
+    <hr>
+
+    <h1 clas="primary-header"> MultiPage Websites </h1>
+    <h3 class="secondary-header" id="computer-file-paths"> Computer File Paths </h3>
+    <ul>
+      <li> File path is a unique location for a file/folder on your computer. </li>
+      <li> File path can direct to a file or folder <li>
+      <li> Root: starting point of computer filing system [hard drive]</li>
+      <li> Types of file paths: 
+        <ul>
+          <li> Absolute File Paths: relative to root of computer </li>
+          <li> Relative File Paths: relative to the location where we're writing code </li>
+        </ul>
+      </li>
+      <li> Special characters are used to indicate relative file paths. 
+        <ul>
+          <li> Double dots at beginning: go up a level inside the project folder. </li>
+          <li> Single dot - tells to start within current directory </li>
+        </ul>
+      </li>
+      <li> In order to access something within current directory [folder in which your working in], you can omit the ./ notation. </li>
+    </ul>
+    <h3 class="secondary-header" id="what-are-webpages"> What are Webpages? </h3>
+    <ul>
+      <li> Multi page websites need multiple webpages. </li>
+      <li> They are mentioned using anchor pages. </li>
+      <li> When link is clicked, the redirection of website occurs.</li>
+    </ul>
+    <h3 class="secondary-header" id="html-boilerplate"> HTML Boilerplate </h3>
+    <ul> 
+      <li> ! + enter => boilerplate automatic inserter in VSCode </li>
+      <li> HTML File creation starts with boilerplate. </li>
+      <img src="./previews/boilerplate-pic.png" alt="boilerplate" class="html-doc">
+    </ul>
+    <h3 class="secondary-header" id="github-web-hosting"> Hosting Websites for Free with GitHub </h3>
+    <ul>
+      <li>Web Hosting - making your websites available on the Internet </li>
+      <li> Website is taken onto a web server which is hooked up to the internet </li>
+      <li> Steps 
+        <ul>
+          <li> Create a new repository and name it. </li>
+          <li> Tick Public Box. </li>
+          <li> Add a README file. Create the repository. </li>
+          <li> Upload Files. HTML Files should always be saved as index.html and the images should always be in a folder called previews. All the subsidiary HTML pages are present in the public folder. </li>
+          <li> Commit changes and then add files. It takes a little time and a few refreshes. </li>
+          <li> Settings -> Pages -> Branch -> Main -> Save. Refresh a couple of times and you get website link. </li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr>
+
+    <!-- JavaScript Documentation -->
+    <h1 class="primary-header"> JavaScript </h1>
+    <h3 class="secondary-header" id="introduction"> Introduction </h3>
+    <ul>
+      <li> JavaScript is a cross-platform, object-oriented scripting language. </li>
+      <li> It is a small and lightweight language. </li> 
+      <li> Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them. </li> 
+      <li>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+        <ul> 
+        <li> Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input, and page navigation.</li>
+        <li> Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
+        </ul> 
+      </li>
+    </ul>
+    <h3 class="secondary-header" id="javascript-and-java"> Javascript and Java </h3>
+    <ul>
+      <li> JavaScript and Java are similar in some ways but fundamentally different in some others. </li>
+      <li> The JavaScript language resembles Java but does not have Java's static typing and strong type checking. </li>
+      <li> JavaScript follows most Java expression syntax, naming conventions and basic control-flow constructs which was the reason why it was renamed from LiveScript to JavaScript. </li>
+      <li> In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a runtime system based on a small number of data types representing numeric, Boolean, and string values. </li>
+      <li> JavaScript has a prototype-based object model instead of the more common class-based object model. </li>
+      <li> The prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual objects. </li>
+      <li> JavaScript also supports functions without any special declarative requirements. </li>
+      <li> Functions can be properties of objects, executing as loosely typed methods. </li>
+      <li> JavaScript is a very free-form language compared to Java. </li>
+      <li> You do not have to declare all variables, classes, and methods. You do not have to be concerned with whether methods are public, private, or protected, and you do not have to implement interfaces. </li>
+      <li> Variables, parameters, and function return types are not explicitly typed. </li>
+    </ul>
+    <h3 class="secondary-header" id="hello-world"> Hello World </h3>
+    <ul>
+      <li> To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code: </li>
+      <img src="./previews/javascript-pic-1.png" alt="javascript-1" class="html-doc-1">
+      <li> Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! </li>
+    </ul>
+    <h3 class="secondary-header" id="variables"> Variables </h3>
+    <ul>
+      <li> You use variables as symbolic names for values in your application. </li>
+      <li> The names of variables, called identifiers, conform to certain rules. </li>
+      <li> A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). </li>
+      <li> Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</li>
+      <li> You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. </li>
+      <li> You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name. </li>
+    </ul>
+    <h3 class="secondary-header" id="declaring-variables"> Declaring Variables </h3>
+    <ul>
+      <li> With the keyword var. 
+        <ul>
+          <img src="./previews/javascript-pic-2.png" alt="javascript-2" class="html-doc-1">
+          <li> Used to declare both global and local variables. </li>
+        </ul>
+      </li>
+      <li> By assigning it to a value. 
+        <ul>
+          <img src="./previews/javascript-pic-3.png" alt="javascript-3" class="html-doc-1">
+          <li> Always declares a global variable </li>
+          <li> Generates a strict JS warning. You shouldn't use this variant. </li>
+        </ul>
+      </li>
+      <li> With the keyword let 
+        <ul>
+          <img src="./previews/javascript-pic-4.png" alt="javascript-4" class="html-doc-1">
+          <li> Used to declare a block scope local variable. </li>
+        </ul>
+      </li>
+    </ul>
+    <h3 class="secondary-header" id="variable-scope"> Variable Scope </h3>
+    <ul>
+      <li>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. </li>
+      <li>When you declare a variable within a function, it is called a local variable, because it is available only within that function. </li>
+      <li> JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. </li>
+      <li> For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement. 
+        <img src="./previews/javascript-pic-5.png" alt="javascript-5" class="html-doc-1">
+      </li>
+      <li> This behavior changes, when using the let declaration introduced in ECMAScript 2015.</li>
+      <img src="./previews/javascript-pic-6.png" alt="javascript-6" class="html-doc-1">
+    </ul>
+    <h3 class="secondary-header" id="global-variables"> Global Variables </h3>
+    <ul>
+      <li> Global variables are in fact properties of the global object. </li>
+      <li> In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</li>
+      <li> Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. </li>
+      <li> For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber. </li>
+    </ul>
+    <h3 class="secondary-header" id="constants"> Constants </h3>
+    <ul>
+      <li> You can create a read-only, named constant with the const keyword. </li>
+      <li> The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters. </li>
+      <img src="./previews/javascript-pic-7.png" alt="javascript-pic" class="html-doc-1">
+      <li> A constant cannot change value through assignment or be re-declared while the script is running. </li>
+      <li> It has to be initialized to a value. </li>
+      <li> The scope rules for constants are the same as those for let block scope variables. </li>
+      <li> If the const keyword is omitted, the identifier is assumed to represent a variable. </li>
+      <li> You cannot declare a constant with the same name as a function or variable in the same scope. For example: </li>
+      <img src="./previews/javascript-pic-8.png" alt="javascript-pic" class="html-doc-1">
+      <li> However, object attributes are not protected, so the following statement is executed without problems. </li>
+      <img src="./previews/javascript-pic-9.png" alt="javascript-pic-9" class="html-doc-1">
+    </ul>
+    <h3 class="secondary-header" id="data-types"> Data Types </h3>
+    <ul>
+      <li> The latest ECMAScript standard defines seven data types:
+        <ul>
+          <li> Six data types that are primitives: 
+            <ul>
+              <li>Boolean. true and false. </li>
+              <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant.</li>
+              <li>undefined. A top-level property whose value is undefined. </li>
+              <li>Number. 42 or 3.14159. </li>
+              <li>String. "Howdy" </li>
+              <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable. </li>
+            </ul>
+          </li>
+          <li>and Object </li>
+        </ul>
+      <li>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform </li>
+    </ul>
+    <h3 class="secondary-header" id="if-else-statement"> if...else statement </h3>
+    <ul>
+      <li> Use the if statement to execute a statement if a logical condition is true. </li>
+      <li> Use the optional else cAlause to execute a statement if the condition is false. </li>
+      <li> An if statement looks as follows: </li>
+      <img src="./previews/javascript-pic-10.png" alt="javascript-pic-10" class="html-doc-1">
+      <li> condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. </li>
+      <li> If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements. </li>
+      <li> You may also compound the statements using else if to have multiple conditions tested in sequence, as follows: </li>
+      <img src="./previews/javascript-pic-11.png" alt="javascript-pic" class="html-doc-1">
+      <li> In the case of multiple conditions only the first logical condition which evaluates to true will be executed. </li>
+      <li> To execute multiple statements, group them within a block statement ({ ... }) . </li>
+      <li> In general, it's good practice to always use block statements, especially when nesting if statements:</li>
+      <img src="./previews/javascript-pic-12.png" alt="javascript-pic" class="html-doc-1">
+      <li> It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. </li>
+      <li> For example, do not use the following code: </li>
+      <img src="./previews/javascript-pic-13.png" alt="javascript-pic" class="html-doc-1">
+      <li> If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example: </li>
+      <img src="./previews/javascript-pic-14.png" alt="javascript-pic" class="html-doc-1">
+    </ul>
+    <h3 class="secondary-header" id="while-statement"> while statement </h3>
+    <li> A while statement executes its statements as long as a specified condition evaluates to true. </li>
+    <li> A while statement looks as follows:</li>
+    <img src="previews/javascript-pic-15.png" alt="javascript-pic" class="html-doc-1">
+    <li> If the condition becomes false, statement within the loop stops executing and control passes to the statement following the loop. </li>
+    <li> The condition test occurs before statement in the loop is executed. </li>
+    <li> If the condition returns true, statement is executed and the condition is tested again. </li>
+    <li> If the condition returns false, execution stops and control is passed to the statement following while. </li>
+    <li> To execute multiple statements, use a block statement ({ ... }) to group those statements. </li>
+    <li> Example: The following while loop iterates as long as n is less than three: </li>
+    <img src="./previews/javascript-pic-16.png" alt="javascript-pic" class="html-doc-1">
+    <li> With each iteration, the loop increments n and adds that value to x. Therefore, x and n take on the following values:
+      <ul>
+        <li> After the first pass: n = 1 and x = 1 </li>
+        <li> After the second pass: n = 2 and x = 3</li>
+        <li> After the third pass: n = 3 and x = 6</li>
+      </ul>
+    After completing the third pass, the condition n &lt 3 is no longer true, so the loop terminates.</li>
+    <h3 class="secondary-header" id="function-declarations"> Function Declarations </h3>
+    <ul>
+      <li> A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by: 
+        <ul>
+          <li>The name of the function. </li>
+          <li>A list of arguments to the function, enclosed in parentheses and separated by commas </li>
+          <li>The JavaScript statements that define the function, enclosed in curly brackets, { }.</li>
+        </ul> </li>
+      <li> For example, the following code defines a simple function named square: </li>
+      <img src="./previews/javascript-pic-17.png" alt="javascript-pic" class="html-doc-1">
+      <li> The function square takes one argument, called number. </li>
+      <li> The function consists of one statement that says to return the argument of the function (that is, number) multiplied by itself. </li>
+      <li> The return statement specifies the value returned by the function.</li>
+      <img src="./previews/javascript-pic-18.png" alt="javascript-pic" class="html-doc-1">
+      <li> Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function. </li>
+    </ul>
+  </div>
+</body>
+</html>
